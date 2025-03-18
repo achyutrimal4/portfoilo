@@ -1,0 +1,90 @@
+.lockscreen-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    transition: all ease 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+}
+
+.lockscreen-section .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.name span {
+    font-size: 10em;
+    font-weight: bold;
+    cursor: default;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    display: inline-block;
+}
+
+.lockscreen-section .name .text-shadow {
+    color: rgba(255, 255, 255, 0.194);
+    filter: blur(5px);
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+}
+
+.lockscreen-section.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+    /* Disables interaction with hidden lock screen */
+}
+
+.lockscreen-arrow__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lockscreen-arrow {
+    position: absolute;
+    bottom: 2em;
+    cursor: pointer;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.lockscreen-arrow p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    position: relative;
+    z-index: 4;
+}
+
+.lockscreen-arrow__container:hover .lockscreen-arrow {
+    transform: rotate(-90deg);
+}

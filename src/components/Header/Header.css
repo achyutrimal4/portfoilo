@@ -1,0 +1,224 @@
+.header-section {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 201;
+  background-color: var(--secondary-color);
+}
+
+.header-section .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.header-section .container a {
+  text-decoration: none;
+}
+
+.header-section .container a p {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.header-section .container .right-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3em;
+}
+.header-link {
+  position: relative;
+}
+
+.header-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+#header__logo {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-transform: lowercase;
+  font-family: "Space Grotesk", sans-serif;
+}
+.header-link__contact-btn {
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+}
+.header-link__contact-btn a p {
+  color: var(--secondary-color);
+}
+/* Mobile Sidebar */
+.mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-sidebar {
+  height: 100%;
+  width: 50%;
+  background-color: var(--secondary-color);
+  position: fixed;
+  left: -100%;
+  top: 5em;
+  transition: all ease-in-out 1s;
+  z-index: 200;
+  border: 2px solid white;
+  border-right: 1px solid white;
+}
+
+.mobile-sidebar2 {
+  height: 100%;
+  width: 50%;
+  background-color: var(--secondary-color);
+  position: fixed;
+  right: -100%;
+  top: 5em;
+  transition: all ease-in-out 1s;
+  z-index: 200;
+  border: 2px solid white;
+  border-left: 1px solid white;
+}
+
+.mobileSidebar--close-btn {
+  cursor: pointer;
+}
+
+.mobile-sidebar.active {
+  top: 5em;
+  left: 0;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  border-radius: 0;
+}
+
+.mobile-sidebar2.active {
+  top: 5em;
+  right: 0;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  border-radius: 0;
+}
+
+.mobileSidebar,
+.mobileSidebar2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.mobileSidebar--menu_items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobileSidebar--menu_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 500ms;
+  padding-left: 1em;
+  height: 7.7em;
+  border-bottom: 2px solid white;
+}
+
+.mobileSidebar--menu_item > * {
+  width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3em;
+}
+
+.social-links a {
+  font-size: 2.5em;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.mobileSidebar--menu_item:hover {
+  background-color: rgba(128, 128, 128, 0.174);
+}
+
+.mobileSidebar--top-bar {
+  margin: 0.5em 0 0.5em 1em;
+  display: flex;
+  gap: 0.5em;
+}
+
+.mobileSidebar--top-bar a {
+  text-decoration: none;
+}
+
+.mobileSidebar--top-bar a:hover {
+  text-decoration: underline;
+}
+
+.cart-overlay {
+  width: 100%;
+  height: 100%;
+  scale: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all ease-in 0.4s;
+  z-index: 199;
+  background: rgba(0, 0, 0, 0.52);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+}
+
+.cart-overlay.active {
+  scale: 1;
+  opacity: 1;
+  transition: all ease-out 0.4s;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+}

@@ -1,0 +1,134 @@
+.projects-section {
+  width: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.projects-section .container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.projects-section .container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.projects-section .container .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.backdrop h1 {
+  font-size: 15em;
+  text-transform: uppercase;
+  opacity: 0.03;
+}
+
+.projects-grid {
+  /* width: 2500px; */
+  width: 100%;
+  display: flex;
+  gap: 5em;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-row {
+  display: flex;
+  width: 100%;
+  height: 45%;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.project-card {
+  width: 100%;
+  height: 18em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5em;
+}
+
+.project-card h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
+.start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-image {
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease 500ms;
+}
+
+.project-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.project-title {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hidden-links {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  gap: 1em;
+  width: fit-content;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse .project-title {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.reverse .hidden-links {
+  left: 0;
+}
+
+.hidden-links > * {
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-card:hover .hidden-links {
+  top: 5em;
+  opacity: 1;
+}
