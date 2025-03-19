@@ -1,28 +1,23 @@
 import React from "react";
 import "./about.css";
-import photo from "../../images/me.png";
-import Marquee from "react-fast-marquee";
-import SkillsMarquee from "../Marquee/Marquee";
 function About() {
   return (
     <section className="about-section">
       <div className="about-container">
         <p className="title">[about me]</p>
         <div className="about-text">
+          <p></p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-            enim, officia eum hic facilis nihil. Sapiente, tenetur dignissimos!
-            Hic, quidem ut atque quibusdam facilis error.
+            I am an IT professional with a Master's degree in Data Analytics
+            from the University of the West of Scotland.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            non eligendi odio officiis aut, ipsam reiciendis similique dolorem
-            ratione, ut rem dolore? Deserunt, nulla laudantium.
+            I can design data analytics projects to give business insights to
+            generate unique data-driven solutions.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            non eligendi odio officiis aut, ipsam reiciendis similique dolorem
-            ratione, ut rem dolore? Deserunt, nulla laudantium.
+            I am passionate about continous learning along with professional
+            growth.
           </p>
 
           <div className="education-section">
@@ -33,8 +28,15 @@ function About() {
                   <h1>MSc. IT, Data Analytics</h1>
                   <p>2024-2025</p>
                 </span>
-                <p>University of the West of Scotland</p>
-                <p>London, UK</p>
+                <p className="italic">
+                  University of the West of Scotland, London
+                </p>
+                <p>
+                  Graduated with grade "A" in MSc. IT with Data Analytics from
+                  the University of the West of Scotland, specializing in
+                  Machine Learning, Data Analysis, AI, Data Visualization, and
+                  Database Management.
+                </p>
               </div>
             </div>
 
@@ -45,43 +47,21 @@ function About() {
                   <p>2018-2022</p>
                 </span>
 
-                <p>International School of Management and Technology</p>
+                <p className="italic">
+                  International School of Management and Technology, Kathmandu,
+                  Nepal
+                </p>
                 <p>aff. University of Sunderland</p>
-                <p>Kathmandu, Nepal</p>
+                <p>
+                  Graduated with First Class Honors with specialization in Web
+                  Development, Software Development, Object-oriented
+                  Programming, Data Analysis and Machine Learning
+                </p>
               </div>
             </div>
           </div>
           <div className="primary-btn">
             <a href="#!">download cv</a>
-          </div>
-        </div>
-      </div>
-      <div className="about-container__second">
-        <SkillsMarquee />
-        <div className="skills-container">
-          <div className="skills-container--inner">
-            <h1>Skills</h1>
-            <div className="skills-tags">
-              <p>Data Analytics</p>
-              <p>Machine Learning</p>
-              <p>Statistical Analysis</p>
-              <p>UI/UX Design</p>
-              <p>Web Development</p>
-            </div>
-          </div>
-          <div className="skills-container--inner">
-            <h1>Technical Skills</h1>
-            <div className="skills-tags">
-              <p>Python</p>
-              <p>SQL</p>
-              <p>Tableau</p>
-              <p>Orange</p>
-              <p>Excel</p>
-              <p>Git & Github</p>
-              <p>JavaScript</p>
-              <p>React</p>
-              <p>HTML/CSS</p>
-            </div>
           </div>
         </div>
       </div>

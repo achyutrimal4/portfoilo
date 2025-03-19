@@ -82,6 +82,11 @@
   color: var(--primary-color);
   border-radius: 0.2em;
 }
+.italic {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.1em;
+}
 .about-container__second {
   margin-top: 5%;
 }

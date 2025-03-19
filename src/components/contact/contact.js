@@ -30,9 +30,8 @@ function Contact() {
           <h1 className="title">Contact me</h1>
           <p>
             {" "}
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-            perspiciatis eum dolores odit maxime adipisci reiciendis fuga ipsam
-            beatae. Animi.
+            Send me a message and I will get back to you as soon as possible.
+            Thank you!
           </p>
           <div className="form-container">
             <form ref={form} onSubmit={sendEmail}>
