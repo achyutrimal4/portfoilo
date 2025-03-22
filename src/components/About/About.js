@@ -19,6 +19,15 @@ function About() {
             I am passionate about continous learning along with professional
             growth.
           </p>
+          <p>
+            I work at Waitrose and Partners as a Supermarket/Customer Assistant.
+          </p>
+          <p>
+            I am looking to get into Data Analytics, which more aligns with my
+            academic qualifications and interests
+          </p>
+          <p>So please hire me.</p>
+          <p>Thank you</p>
 
           <div className="education-section">
             <h1>Education</h1>
